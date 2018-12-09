@@ -1,0 +1,423 @@
+
+  /*Homepage styling start*/
+  body{
+    font-family: 'Noto Sans SC';
+    background-color: #fff;
+    }
+    #herobodyTop{
+        color: #fff;
+        font-family: 'Noto Sans SC';
+        font-weight: 100;
+        font-size: 42px;
+        line-height: 1.37;
+    }
+      
+    #navSec{
+        background: -webkit-gradient(linear, left top, right top, from(#286DA8), to(#438496));
+        background: linear-gradient(to right, #286DA8 0%, #438496 100%);
+    }
+    #navBar-Link > a:hover{
+        color: #cd5360;
+        background-color: #fff;
+    }
+    #buttonSignUp{
+        width: 130px;
+    }
+    #buttonSignUp{
+        /*border-color: #b37d4e;*/
+        background-color: #80CBC4;
+    }
+    #buyer, #seller{
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 150px;
+        height: 50px;
+    }
+    #buyer{
+        background-color: #80cbc4;
+        border: none;
+    }
+    #seller{
+        color: #fff;
+        border-color: #fff;
+    }
+    #description1{
+        margin-top: 10px;
+    }
+    #title2{
+        margin-top: 10px;
+    }
+    #know > li{
+        padding: 5px;
+    }
+    #topSell{
+        background-color: #F7F7F7;
+    }
+    .img_wrap{
+        position: relative;
+        height: 200px;
+        width: 257px;
+    }
+    .img_img{
+        height: 200px;
+        width: 257px;
+        
+    }
+    .img_description_layer{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(36, 62, 206,0.6);
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: opacity .2s, visibility .2s;
+    }
+    
+    .img_wrap:hover .img_description_layer{
+        visibility: visible;
+        opacity: 1;
+    }
+    .img_description{
+        transition: 2s;
+        transform: translateY(1em);
+    }
+    .img_wrap:hover .img_description{
+        transform: translateY(0);
+    }
+    #footer{
+        background-color: #F7F7F7;
+    }
+    /*contact form styl*/
+    
+    #label-input100 {
+      font-size: 15px;
+      color: #438496;
+      line-height: 1.5;
+      font-weight: 400;
+      padding-left: 5px;
+    }
+    #contact100-form-title {
+        display: block;
+        width: 100%;
+        font-family: Poppins-Bold;
+        font-size: 35px;
+        color: #333333;
+        line-height: 1.2;
+        text-align: left;
+        padding-bottom: 10px;
+      }
+      #wrap-input100 {
+        width: 100%;
+        border-bottom: 2px solid #d9d9d9;
+        padding-bottom: 13px;
+        margin-bottom: 65px;
+      }
+      #validate-input {
+        position: relative;
+      }
+      
+      #alert-validate::before {
+        content: attr(data-validate);
+        position: absolute;
+        max-width: 70%;
+        background-color: #fff;
+        border: 1px solid #351f39;
+        border-radius: 2px;
+        padding: 4px 25px 4px 10px;
+        top: 58%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 2px;
+        pointer-events: none;
+      
+        font-family: Poppins-Medium;
+        color: #351f39;
+        font-size: 13px;
+        line-height: 1.4;
+        text-align: left;
+      
+        visibility: hidden;
+        opacity: 0;
+      
+        -webkit-transition: opacity 0.4s;
+        -o-transition: opacity 0.4s;
+        -moz-transition: opacity 0.4s;
+        transition: opacity 0.4s;
+      }
+      
+      #alert-validate::after {
+        content: "\f06a";
+        font-family: FontAwesome;
+        display: block;
+        position: absolute;
+        color: #351f39;
+        font-size: 16px;
+        top: 58%;
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
+        transform: translateY(-50%);
+        right: 8px;
+      }
+      
+      #alert-validate:hover:before {
+        visibility: visible;
+        opacity: 1;
+      }
+      
+      @media (max-width: 992px) {
+        #alert-validate::before {
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+      #contact100-more {
+        font-family: Poppins-Regular;
+        font-size: 14px;
+        color: #111;
+        line-height: 1.5;
+      }
+      #container-contact100-form-btn {
+        max-width: 100%;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 10px;
+      }
+      
+      #contact100-form-btn {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        min-width: 100px;
+        height: 50px;
+        background-color: #438496;
+        border-radius: 25px;
+      
+        font-family: Poppins-Medium;
+        font-size: 16px;
+        color: #fff;
+        line-height: 1.2;
+      
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+      
+        box-shadow: 0 10px 30px 0px;
+        -moz-box-shadow: 0 10px 30px 0px;
+        -webkit-box-shadow: 0 10px 30px 0px;
+        -o-box-shadow: 0 10px 30px 0px;
+        -ms-box-shadow: 0 10px 30px 0px;
+      }
+      
+      #contact100-form-btn i {
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+      }
+      
+      #contact100-form-btn:hover {
+        background-color: #333333;
+        box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+        -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+        -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+        -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+        -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
+      }
+      
+      #contact100-form-btn:hover i {
+        -webkit-transform: translateX(10px);
+        -moz-transform: translateX(10px);
+        -ms-transform: translateX(10px);
+        -o-transform: translateX(10px);
+        transform: translateX(10px);
+      }
+      
+      input.input100 {
+      outline: none;
+      border: none;
+    }
+    
+    textarea:focus, input:focus {
+        border-color: transparent !important;
+      }
+      
+      input:focus::-webkit-input-placeholder { color:transparent; }
+      input:focus:-moz-placeholder { color:transparent; }
+      input:focus::-moz-placeholder { color:transparent; }
+      input:focus:-ms-input-placeholder { color:transparent; }
+      
+      textarea:focus::-webkit-input-placeholder { color:transparent; }
+      textarea:focus:-moz-placeholder { color:transparent; }
+      textarea:focus::-moz-placeholder { color:transparent; }
+      textarea:focus:-ms-input-placeholder { color:transparent; }
+    #input100 {
+        display: block;
+        max-width: 100%;
+        background: transparent;
+        font-size: 18px;
+        color: #438496;
+        line-height: 1.2;
+        padding: 0 5px;
+      }
+      
+      #focus-input100 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+      }
+      
+      #focus-input100::before {
+        content: "";
+        display: block;
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 0;
+        height: 2px;
+      
+        -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        transition: all 0.4s;
+      
+        background: #351f39;
+      }
+      
+      
+      /*---------------------------------------------*/
+      input.input100 {
+        height: 40px;
+      }
+      
+      
+      textarea.input100 {
+        min-height: 110px;
+        padding-top: 9px;
+        padding-bottom: 13px;
+      }
+      
+      
+      .input100:focus + .focus-input100::before {
+        width: 100%;
+      }
+      nav{
+        
+      box-shadow: 0 0 4px 0 rgba(0,0,0,.08), 0 2px 4px 0 rgba(0,0,0,.12);
+      }
+      .has-val.input100 + .focus-input100::before {
+        width: 100%;
+      }
+      #footer{
+          background-color: #363636;
+          color: #ffffff;
+      }
+    
+      /*Homepage styling end*/
+    
+      /*---------------------------------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------
+      ------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------------------------
+      ------------------------------
+      -------------------------------------
+      -----------------------------*/
+    
+      /*How it works styling */
+      #tabsWorksBuy > .is-active > a{
+          color: #cd5360;
+          border-bottom-color: #B37D4E;
+      }
+      #worksBuyhelp2{
+        padding-top: 10px;
+        line-height: 1.5;
+      }
+     #worksorderBrowse{
+       background-color: hsl(171, 100%, 41%);
+       color: white;
+       width: 150px;
+       height: 50px;
+     }
+     
+    #worksorderPost{
+      background-color: hsl(204, 86%, 53%); 
+      color: white;
+      width: 150px;
+      height: 50px;
+    
+    }
+    
+     #workscap1{
+       padding: auto;
+       margin: auto;
+     }
+     #worksGetStartbuyer{
+       background-color: #F7F7F7;
+     }
+      /*How it works styling end*/
+    
+      input {
+        font-weight: 300;
+      }
+      p {
+        font-weight: 700;
+      }
+      p.subtitle {
+        padding-top: 1rem;
+      }
+      
+    .loginText > .title{
+        color:  #351f39;
+        
+    }
+    #downLink > a{
+      color: #00d1b2;
+    }
+    #downlink > a:hover{
+      color: #351f39;
+    }
+    .loginText > .subtitle{
+        color:  #351f39,;
+        
+    }
+    #formbox{
+      height: 500px;
+      margin-top: 30px;
+    }
